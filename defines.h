@@ -11,3 +11,7 @@
 
 // WARNING: additional behavior - throws 'i' counter variable into the scope
 #define for_range(range) for(int i = 0; i < range; ++i)
+#define for_matrix(rows, cols) for(int i = 0; i < rows; ++i) for(int j = 0; j < cols; ++j)
+
+// WARNING: use inside for_matrix loop
+#define cur_elem(matrix) matrix.at(i).at(j) // TODO: use [row][col]
