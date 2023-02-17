@@ -13,13 +13,11 @@ private:
 	// TODO: use bitset or a pointer here
 	matrix_type matrix;
 
-
+	void create_matrix(const int rows, const int cols);
+	void fill_matrix(const mask_type& mask);
 public:
 
 	Matrix();
-
-	// TODO: create_matrix and move filling to another method
-	void fill_matrix(const int rows, const int cols, const mask_type& mask);
 
 	/// <summary>
 	/// clears console before output matrix
