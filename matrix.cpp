@@ -34,6 +34,7 @@ void Matrix::create_matrix(const int rows, const int cols)
 	}
 }
 
+// finite state machine: state 0 and state 1
 void Matrix::live()
 {
 	/*
