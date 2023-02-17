@@ -34,9 +34,39 @@ void Matrix::create_matrix(const int rows, const int cols)
 	}
 }
 
-void Matrix::updateScreen()
+void Matrix::live()
+{
+	/*
+	
+	go through matrix
+
+	find a live cell (value 1 / true)
+
+	+ - 1: get all neighbours
+	count how much of them are alive
+
+	if < 2 
+		kill current cell
+	if 2-3 
+		pass
+	if > 3
+		kill cell
+
+	check dead cells around
+		for each check neighbours
+			if there 3 neighbours - make it alive
+
+	...
+	draw the result(in other method)
+
+	*/
+}
+
+void Matrix::update()
 {
 	clear_console();
+
+	live();
 
 	for (int i = 0; i < matrix.size(); i++)
 	{

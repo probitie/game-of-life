@@ -15,12 +15,16 @@ private:
 
 	void create_matrix(const int rows, const int cols);
 	void fill_matrix(const mask_type& mask);
+
 public:
 
+	// TODO: move matrix code to another class
 	Matrix();
 
 	/// <summary>
 	/// clears console before output matrix
 	/// </summary>
-	void updateScreen();
+	void update();
+
+	void live();
 };
