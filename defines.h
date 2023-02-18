@@ -17,6 +17,5 @@
 #define for_range_var(range, name) for(int name = 0; name < range; ++name)
 #define for_range(range) for_range_var(range, i)
 #define for_matrix(rows, cols) for_range_var(rows, i) for_range_var(cols, j)
-
 // WARNING: use inside for_matrix loop
 #define cur_elem(matrix) matrix.at(i).at(j) // TODO: use [row][col]
