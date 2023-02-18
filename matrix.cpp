@@ -2,9 +2,11 @@
 
 Matrix::Matrix() : matrix{}, height{20}, width{20}
 {
-	// pass filled rows in compact fomat (like vector<pair<int, int>> coordinates)
 	create_matrix(height, width);
-	fill_matrix(coordinate_sequnce{ {2, 2}, {2, 3}, {3, 2}, {2, 1} });
+
+	// TODO: add random filling / input from file
+	fill_matrix(coordinate_sequnce{ {2, 2}, {2, 3}, {3, 2}, {2, 1},
+										 {2, 0}, {2, 5}, {3, 5} });
 }
 
 void Matrix::fill_matrix(const coordinate_sequnce& mask)
